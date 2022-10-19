@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Exercises
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 1- Create a TextBody component and passing a prop
 
-## Available Scripts
+- Create a `BodyText` component that is used by `<App/>`
+- The `<App/>` is passing a `text` prop that gets rendered as paragraph
 
-In the project directory, you can run:
+> Hint
 
-### `npm start`
+```javascript
+<p>lorem ipsum ipsu</p>
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 2- Create a Image component
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Create a `Image` component that is used by `<App/>`
+- The `<App/>` is passing four props for `src`, `alt`, `width` and `height`
+- The `width` and `height` should be `150px`
 
-### `npm test`
+## 3- Create an UnorderedList component
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Create a `UnorderedList` component that is used by `<App/>`
+- The `<App/>` is passing four props for the list items that will be rendered as `<li></li>` elements
 
-### `npm run build`
+> Hint
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+return(
+ {
+  items.map(item=>(
+   <li>item</li>
+  ))
+ }
+)
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 4- Create an Table component
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Create a `Table` component that is used in `<App/>`
+- The `<App/>` should pass array of objects of users, each user has name, email, and telephone number
+- The `<Table/>` component should render this information in a table format
+- Hint: make use of `Bootstrap`
 
-### `npm run eject`
+## 5- Use React state to update the Table
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Use the react state management hook `useState` to add more users to the table
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 6- Todo App
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Create a todo app similar to what we built with vanilla js
